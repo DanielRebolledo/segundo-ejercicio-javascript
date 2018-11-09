@@ -1,0 +1,56 @@
+<!-- Crear una galería de imágenes
+
+Todas las imágenes deben estar desaturada (en blanco y negro)
+ver: https://stackoverflow.com/questions/22994810/how-do-i-desaturate-and-saturate-an-image-using-css
+
+Al hacer click sobre la imágen esta debe recuperar su color con una transición
+de un segundo, al volver hacer click debe volver a estar en blanco y negro.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Ejercicio javascript-</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    
+  </head>
+  <body>
+    <h1>Galería de imágenes</h1>
+    
+    <div class="gallery">
+    <img class="thumb" src="https://picsum.photos/400/400?image=0">
+    <img class="thumb" src="https://picsum.photos/400/400?image=1">
+    <img class="thumb" src="https://picsum.photos/400/400?image=2">
+    <img class="thumb" src="https://picsum.photos/400/400?image=3">
+    <img class="thumb" src="https://picsum.photos/400/400?image=4">
+    <img class="thumb" src="https://picsum.photos/400/400?image=5">
+
+    <img class="thumb" src="https://picsum.photos/400/400?image=0">
+    <img class="thumb" src="https://picsum.photos/400/400?image=1">
+    <img class="thumb" src="https://picsum.photos/400/400?image=2">
+    <img class="thumb" src="https://picsum.photos/400/400?image=3">
+    <img class="thumb" src="https://picsum.photos/400/400?image=4">
+    <img class="thumb" src="https://picsum.photos/400/400?image=5">
+
+    <img class="thumb" src="https://picsum.photos/400/400?image=0">
+    <img class="thumb" src="https://picsum.photos/400/400?image=1">
+    <img class="thumb" src="https://picsum.photos/400/400?image=2">
+    <img class="thumb" src="https://picsum.photos/400/400?image=3">
+    <img class="thumb" src="https://picsum.photos/400/400?image=4">
+    <img class="thumb" src="https://picsum.photos/400/400?image=5">
+    </div>
+    
+
+    <script>
+      $(".thumb").on("click", function(){
+        $(this).toggleClass("gris");
+       // $(".thumb").toggleClass("gris");
+      });
+      
+    </script>
+    
+    
+  </body>
+</html>

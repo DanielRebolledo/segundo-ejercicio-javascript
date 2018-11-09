@@ -1,0 +1,20 @@
+
+h1{
+    text-align: center;
+    color: #4d4d4d;
+}
+.gris{
+    -webkit-filter: grayscale(100%);  
+  filter: grayscale(100%);
+    transition: 1s;
+}
+.gallery{
+  margin-top:20px;
+  text-align: center;
+}
+.thumb{
+  width:200px;
+  height:200px;
+ 
+  
+}
